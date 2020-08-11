@@ -257,7 +257,7 @@ function finity.new(isdark, gprojectName, thinProject)
 	if projectName then
 		self2.tip.Text = projectName
 	else
-		self2.tip.Text = "My Resturant Gui"
+		self2.tip.Text = "Prison Showdown GUI"
 	end
 	
 	local separator = self:Create("Frame", {
