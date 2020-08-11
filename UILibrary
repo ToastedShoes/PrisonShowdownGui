@@ -117,9 +117,9 @@ function finity.new(isdark, gprojectName, thinProject)
 	local finityObject = {}
 	local self2 = finityObject
 	local self = finity
-	if not finity.gs["RunService"]:IsStudio() and self.gs["CoreGui"]:FindFirstChild("MyResturantGui") then
-		Game:GetService("CoreGui").MyResturantGui.Container.AnchorPoint = UDim2.new(0, 0, 0, 0)
-		print("My Resturant Gui Already Loaded!")
+	if not finity.gs["RunService"]:IsStudio() and self.gs["CoreGui"]:FindFirstChild("PrisonShowdownGUI") then
+		game:GetService("CoreGui").PrisonShowdownGUI.Container.AnchorPoint = UDim2.new(0, 0, 0, 0)
+		print("Prison Showdown GUI Already Loaded!")
 		
 		return
 	end
@@ -185,7 +185,7 @@ function finity.new(isdark, gprojectName, thinProject)
 		end
 	end)
 	self2.userinterface = self:Create("ScreenGui", {
-		Name = "MyResturantGui",
+		Name = "PrisonShowdownGUI",
 		ZIndexBehavior = Enum.ZIndexBehavior.Global,
 		ResetOnSpawn = false,
 	})
