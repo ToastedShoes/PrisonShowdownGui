@@ -118,9 +118,7 @@ function finity.new(isdark, gprojectName, thinProject)
 	local self2 = finityObject
 	local self = finity
 	if not finity.gs["RunService"]:IsStudio() and self.gs["CoreGui"]:FindFirstChild("PrisonShowdownGUI") then
-		game:GetService("CoreGui").PrisonShowdownGUI.Container.AnchorPoint = Vector2.new(0, 0)
 		print("Prison Showdown GUI Already Loaded!")
-		
 		return
 	end
 	local theme = finity.theme
